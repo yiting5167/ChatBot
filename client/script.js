@@ -6,6 +6,24 @@ const chatContainer = document.querySelector('#chat_container')
 
 let loadInterval
 
+function firstpage(){
+    return (
+        `
+        <div class="text-purple-800 w-full md:max-w-2xl lg:max-w-3xl md:h-full md:flex md:flex-col px-6 dark:text-purple-100">
+            <div style="line-height: 100px;"> &nbsp; <div>
+            <h1 class="text-4xl font-semibold text-center mt-6 sm:mt-[20vh] ml-auto mr-auto mb-10 sm:mb-16">AI Chat for fun</h1>
+           <center><img src = "chatbot_front.GIF"  width="200"  /></center>
+        </div>
+        `
+    )
+}
+
+
+if (chatContainer.innerHTML.length === 0) {
+    chatContainer.innerHTML = firstpage()
+}
+
+
 function loader(element) {
     element.textContent = ''
 
@@ -111,6 +129,11 @@ const handleSubmit = async (e) => {
         alert(err)
     }
 }
+
+
+
+
+
 
 form.addEventListener('submit', handleSubmit)
 form.addEventListener('keyup', (e) => {
