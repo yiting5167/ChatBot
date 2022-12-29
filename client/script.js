@@ -12,7 +12,7 @@ function firstpage(){
         <div class="text-purple-800 w-full md:max-w-2xl lg:max-w-3xl md:h-full md:flex md:flex-col px-6 dark:text-purple-100">
             <div style="line-height: 100px;"> &nbsp; <div>
             <h1 class="text-4xl font-semibold text-center mt-6 sm:mt-[20vh] ml-auto mr-auto mb-10 sm:mb-16">AI Chat for fun</h1>
-           <center><img src = "chatbot_front.GIF"  width="200"  /></center>
+           <center><img src = "https://github.com/yiting5167/ChatBot/blob/main/client/chatbot_front.GIF"  width="200"  /></center>
         </div>
         `
     )
